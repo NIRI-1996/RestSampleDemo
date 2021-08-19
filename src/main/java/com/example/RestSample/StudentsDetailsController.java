@@ -16,13 +16,13 @@ public class StudentsDetailsController {
 	@Autowired
 	private StudentDetailsRepo detailsRepo;
 	
-	@PutMapping("/details")
+	@PostMapping("/details")
 	public StudentDetails details(@RequestBody StudentDetails studentDetails) {
 		return detailsRepo.save(studentDetails);
 		
 	}
 	
-	@PostMapping("/updatedetails/{id}")
+	@PutMapping("/updatedetails/{id}")
 	public StudentDetails updatedetails(@PathVariable int id) {
 		StudentDetails sd=detailsRepo.findById(id).get();
     return detailsRepo.save(sd);
