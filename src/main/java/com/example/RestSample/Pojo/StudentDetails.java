@@ -1,4 +1,4 @@
-package com.example.RestSample;
+package com.example.RestSample.Pojo;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

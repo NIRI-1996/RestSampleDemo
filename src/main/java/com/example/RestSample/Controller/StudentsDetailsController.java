@@ -1,4 +1,4 @@
-package com.example.RestSample;
+package com.example.RestSample.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.example.RestSample.Pojo.StudentDetails;
+import com.example.RestSample.Repository.StudentDetailsRepo;
 
 @RestController
 @RequestMapping("/api")
