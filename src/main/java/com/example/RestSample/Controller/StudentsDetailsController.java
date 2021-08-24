@@ -31,7 +31,7 @@ public class StudentsDetailsController {
 		return detailsRepo.findById(id).get();
 	
 	}
-	@PutMapping("/updatedetails/{id}")
+	@PutMapping("/updatedetails")
 	public void updatedetails(@RequestBody StudentDetails details) {
 		detailsRepo.save(details);
 	}
@@ -39,6 +39,10 @@ public class StudentsDetailsController {
 	@DeleteMapping("/deletedetails/{id}")
 	public void deletestudent(@PathVariable int id) {
 		detailsRepo.deleteById(id);
+		
+		
+		
+		
 	}
 
 }
